@@ -7,6 +7,13 @@ body{
     justify-content: center;
     }
 
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }    
+
 .logo{
     height: 16px;
     width: 96px;
@@ -197,7 +204,7 @@ footer{
     }    
 
 .footer-background{
-    border: 5px  #00252E;
+    border: 2px  #00252E;
     width: 100%;
     height: 100%;
     background-image: url(./images/bg-footer-top-mobile.svg);
@@ -250,6 +257,15 @@ input{
     width: 320px;
     cursor: pointer;
     }  
+
+.error{
+    opacity: 0;
+    color:#FF4343;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 24px;
+    }    
+
     
 .footer-button{
     height: 48px;
@@ -343,8 +359,13 @@ input{
         }    
     
     header{
-        gap: 921px;
         margin-top: 79px;
+        width: 100%;
+        gap: 0px;
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 100px;
+        box-sizing: border-box;
         }  
         
     h1{
@@ -419,8 +440,8 @@ input{
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
         margin-top: 250px;
-        column-gap: 134px;
-        row-gap: 111px;
+        column-gap: 30px;
+        row-gap: 20px;
         }  
         
     .grow-togather{
@@ -432,8 +453,8 @@ input{
         }    
 
     .grid-picture{
-        height: 404px;
-        width: 534px; 
+        height: 385px;
+        width: 490px; 
         margin-top: 0px;      
         }  
     
@@ -456,7 +477,7 @@ input{
         
     p2{
         height: 72px;
-        width: 520px;
+        width: 480px;
         text-align: left;       
         } 
         
@@ -470,7 +491,6 @@ input{
     
     footer{
         display: flex;
-        flex-direction: column;
         align-items: center;
         height: 720px;
         width: 100%;
@@ -481,9 +501,9 @@ input{
     .footer-sections{
         background-color: #00252E;
         flex-direction: row-reverse;
-        gap: 340px;
-        padding-bottom: 150px;
-        padding-top: 80px;
+        justify-content: space-around;
+        padding: 50px 100px;
+        box-sizing: border-box;
         }    
     
     .footer-background{
@@ -491,18 +511,20 @@ input{
         height: 100%;
         background-image: url(./images/bg-footer-top-desktop.svg);
         background-repeat: repeat-x;
-        background-size: cover;
+        background-size: 110%;
+        background-position: bottom right;
+        border: 2px #00252E;
         }    
         
     .validation{
         display: flex;
         flex-direction: row;
         align-items: end;
-        gap: 40px;
+        gap: 20px;
         }    
         
     .footer-button{
         height: 55px;
-        }
-        
- }    
+        margin-bottom: 23px;
+        }   
+    }
